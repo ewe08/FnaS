@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: black;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 55px;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+.header {
+  height: 1024px;
+  background: linear-gradient(
+    117.03deg,
+    #b7b7b7 0%,
+    rgba(255, 255, 255, 0) 99.4%
+  );
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.nav {
+  padding-top: 30px;
+  display: flex;
+}
+
+.logo {
+  width: 125px;
+  height: 51px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.login {
+  width: 184px;
+  height: 40px;
+  /*margin-left: 78px;*/
+  padding: 0;
+  margin-top: 8px;
+  background: linear-gradient(
+    99.29deg,
+    #7e7e7e -22.55%,
+    rgba(255, 255, 255, 0) 97.04%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  border: none;
+}
+
+.login img {
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+ul li {
+  display: block;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  margin-left: 45px;
+  padding-top: 11px;
+}
+
+.menu li a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  margin-right: 69px;
+  padding: 9 0;
+}
+
+.offer{
+  display: flex;
+}
+
+.offer h1 {
+  width: 500px;
+  height: 100px;
+  margin-top: 258px;
+}
+
+.offer h2 {
+  width: 373.18px;
+  height: 77px;
+  margin-top: 14px;
+}
+
+.lets_go {
+  width: 220.71px;
+  height: 70px;
+
+  background: linear-gradient(
+    95.07deg,
+    #454545 4.76%,
+    rgba(20, 20, 20, 0) 100.12%
+  );
+  filter: drop-shadow(0px 12px 35px rgba(80, 80, 80, 0.42));
+  border-radius: 20px;
+  border: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.albert {
+  float: right;
+}
