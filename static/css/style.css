@@ -70,12 +70,20 @@ h2 {
   line-height: 27px;
   color: #000000;
   border: none;
+  transition: border-radius 0.3s ease-in;
+
 }
 
 .login img {
   padding: 0;
   margin: 0;
   vertical-align: middle;
+}
+
+.login:hover{
+  background: linear-gradient(117.03deg, #B7B7B7 0%, rgba(255, 255, 255, 0) 99.4%);
+  
+
 }
 
 ul li {
