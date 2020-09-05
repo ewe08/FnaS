@@ -18,10 +18,10 @@ class Article(libary.Model):
         return 'Article %r' % self.id
 
 
-@main.route("/main_page")
+@main.route("/")
 def main_page():
     articles = Article.query.order_by(Article.publication_date).all()
-    return render_template("/main_page.html", articles=articles)
+    return render_template("/index.html", articles=articles)
 
 
 @main.route("/admin")
@@ -48,7 +48,7 @@ def admin_data_for_login():
 @main.route("/add_in_libary_page", methods=['POST', 'GET'])
 def create_article():
     global flag
-    if flag == True:
+    if flag:
         if request.method == 'POST':
             title = request.form.get('title')
             text = request.form.get('text')
