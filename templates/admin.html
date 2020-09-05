@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FnaS</title>
-</head>
-<body>
-
-    <form action="" method="post">
-        <p>Username</p>
-        <input type = "text" class = "admin_name" name = "admin_name" placeholder="Скажи свою имя странник" />
-        <p>Password</p>
-        <input type = "password" class = "admin_password" name = "admin_password" placeholder="Поведай страшную тайну что в твоей голове"/>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/admin.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login_admin">
+      <form action="" method="post">
+        <h1 class="warning_admin">Ахтугн! Это вход в админ панель</h1>
+        <input
+          type="text"
+          class="admin_name"
+          name="admin_name"
+          placeholder="Скажи свою имя странник"
+        /><br />
+        <input
+          type="password"
+          class="admin_password"
+          name="admin_password"
+          placeholder="Поведай страшную тайну что в твоей голове"
+        />
         <p>
-        <input type = "submit" href = "/page.html" value="Отправится в чистилище"/>
+          <input
+            type="submit"
+            href="/page.html"
+            value="Отправится в чистилище"
+            class="button_admin"
+          />
         </p>
-    </form>
-</body>
+      </form>
+    </div>
+  </body>
 </html>
-<style>
-
-</style>
+<style></style>

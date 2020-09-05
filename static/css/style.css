@@ -4,6 +4,12 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   color: black;
+
+  background: linear-gradient(
+    117.03deg,
+    #e6e6e6 0%,
+    rgba(255, 255, 255, 0) 99.4%
+  );
 }
 
 h1 {
@@ -97,7 +103,7 @@ header a {
   padding: 9 0;
 }
 
-.offer{
+.offer {
   display: flex;
 }
 
@@ -135,4 +141,55 @@ header a {
 
 .albert {
   float: right;
+}
+
+.warning_admin {
+  padding: 45px 88px;
+  font-size: 22px;
+}
+
+.login_admin {
+  margin: auto;
+  margin-top: 159px;
+  margin-bottom: 300px;
+  width: 570px;
+  height: 530px;
+  background: #e0e0e0;
+  border-radius: 60px;
+}
+
+input {
+  width: 370px;
+  height: 70px;
+  background: #c4c4c4;
+  margin: 0 100px auto;
+  margin-bottom: 50px;
+  border: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.35);
+  transition: border-radius 0.3s ease-in;
+}
+
+.button_admin {
+  margin: 0 200px auto;
+  width: 170px;
+  height: 70px;
+  background: #707070;
+}
+
+input:focus,
+input:hover {
+  border-radius: 25px;
+}
+
+.button_admin:hover {
+  border-radius: 25px;
 }
