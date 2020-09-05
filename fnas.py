@@ -27,11 +27,12 @@ def home():
     return render_template("/index.html", articles=articles)
 
 
-@main.route("/admin", methods=['post', 'get'])
+@main.route("/admin")
 def admin_page():
     return render_template("/admin.html")
 
 
+@main.route("/admin", methods=['post', 'get'])
 def admin_data_for_login():
     global flag
     if request.method == 'POST':
@@ -56,7 +57,7 @@ def create_article():
             libary.session.commit()
             return redirect('/')
         else:
-            return render_template("add_in_libary_page.html")
+            return render_template("new_book.html")
     else:
         return redirect("/")
 
