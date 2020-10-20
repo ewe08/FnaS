@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block title %}{% endblock %}
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <a href="/"
+          ><img src="../static/img/logo.png" alt="logo" class="logo"
+        /></a>
+        <ul class="menu">
+          <li><a href="/">Главная</a></li>
+          <li><a href="#">Курсы</a></li>
+          <li><a href="/library">Библиотека</a></li>
+          <li><a href="#">О нас</a></li>
+        </ul>
+        <button class="login" href='#'>
+          <img src="../static/img/Log in icon.png" alt="" />
+          Вход
+        </button>
+      </div>
+    </div>
+    <header class="header">
+    <div class="container">
+      {% block header %}{% endblock %}
+    </header>
+    
+  </body>
+</html>
