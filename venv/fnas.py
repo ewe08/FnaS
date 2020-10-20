@@ -113,8 +113,8 @@ def create_new_user():
             psw = request.form['password']
             hash_password = generate_password_hash(psw)
             user = Data_users(email=email, password=hash_password)
-            os.session.add(user)
-            os.session.commit()
+            database.session.add(user)
+            database.session.commit()
             return redirect("/")
         else:
             return redirect("/")
